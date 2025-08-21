@@ -11,7 +11,7 @@
 
 /* Illustration container */
 .illustration-container {
-  margin-bottom: 24px;
+  margin-bottom: 8px;
 }
 
 .illustration-container img {
@@ -25,7 +25,6 @@
 .info-container {
   display: flex;
   flex-direction: column;
-  gap: 12px;
 }
 
 /* Topic label */
