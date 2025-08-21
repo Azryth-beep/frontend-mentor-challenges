@@ -1,0 +1,47 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply the font family globally */
+body {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.6;
+  background-color: var(--color-yellow);
+  color: var(--color-gray-950);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-weight: var(--font-weight-extrabold);
+  line-height: 1.2;
+}
+
+p {
+  color: var(--color-gray-500);
+  margin-bottom: 1rem;
+}
+
+/* Interactive elements */
+button, a {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Focus states for accessibility */
+button:focus, a:focus {
+  outline: 2px solid var(--color-gray-950);
+  outline-offset: 2px;
+}

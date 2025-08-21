@@ -3,24 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="QR Code component challenge from Frontend Mentor - A professional implementation with accessibility and modern CSS practices" />
-    <meta name="keywords" content="QR code, frontend mentor, CSS, HTML, accessibility, responsive design" />
+    <meta
+      name="description"
+      content="QR Code component challenge from Frontend Mentor - A professional implementation with accessibility and modern CSS practices"
+    />
+    <meta
+      name="keywords"
+      content="QR code, frontend mentor, CSS, HTML, accessibility, responsive design"
+    />
     <meta name="author" content="Senior Developer" />
-    
+
     <!-- Preconnect to external domains for performance optimization -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
+
     <!-- Google Fonts - Outfit with variable font support -->
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    
+
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-    
-    <title>Frontend Mentor | QR Code Component - Professional Implementation</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | QR Code Component - Professional Implementation
+    </title>
 
     <style>
       /* ===== CSS CUSTOM PROPERTIES (CSS Variables) ===== */
@@ -30,32 +43,32 @@
         --color-light-gray: hsl(212, 45%, 89%);
         --color-gray: hsl(216, 15%, 48%);
         --color-dark-blue: hsl(218, 44%, 22%);
-        
+
         /* Spacing scale for consistent design system */
-        --spacing-xs: 0.5rem;    /* 8px */
-        --spacing-sm: 1rem;      /* 16px */
-        --spacing-md: 1.5rem;    /* 24px */
-        --spacing-lg: 2rem;      /* 32px */
-        
+        --spacing-xs: 0.5rem; /* 8px */
+        --spacing-sm: 1rem; /* 16px */
+        --spacing-md: 1.5rem; /* 24px */
+        --spacing-lg: 2rem; /* 32px */
+
         /* Border radius scale */
         --radius-sm: 8px;
         --radius-md: 16px;
-        
+
         /* Typography scale */
-        --font-size-sm: 0.875rem;  /* 14px */
-        --font-size-base: 1rem;    /* 16px */
-        --font-size-lg: 1.125rem;  /* 18px */
-        
+        --font-size-sm: 0.875rem; /* 14px */
+        --font-size-base: 1rem; /* 16px */
+        --font-size-lg: 1.125rem; /* 18px */
+
         /* Shadows */
         --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
         --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
         --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
         --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
-        
+
         /* Transitions */
         --transition-fast: 150ms ease-in-out;
         --transition-normal: 250ms ease-in-out;
-        
+
         /* Z-index scale */
         --z-dropdown: 1000;
         --z-sticky: 1020;
@@ -84,23 +97,23 @@
       }
 
       body {
-        font-family: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
-                     "Helvetica Neue", Arial, sans-serif;
+        font-family: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, sans-serif;
         font-size: var(--font-size-base);
         line-height: 1.6;
         color: var(--color-dark-blue);
         background-color: var(--color-light-gray);
         min-height: 100vh;
         padding: var(--spacing-sm);
-        
+
         /* Flexbox centering for main content */
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         /* Smooth scrolling for better UX */
         scroll-behavior: smooth;
-        
+
         /* Prevent horizontal scroll */
         overflow-x: hidden;
       }
@@ -111,25 +124,26 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+
         /* Sizing */
         width: 100%;
         max-width: 320px; /* Increased from 300px for better mobile experience */
         height: fit-content;
-        
+
         /* Visual styling */
         background-color: var(--color-white);
         border-radius: var(--radius-md);
         padding: var(--spacing-sm);
-        
+
         /* Shadow with fallbacks for cross-browser compatibility */
         box-shadow: var(--shadow-lg);
         -webkit-box-shadow: var(--shadow-lg);
         -moz-box-shadow: var(--shadow-lg);
-        
+
         /* Smooth transitions for interactive elements */
-        transition: transform var(--transition-normal), box-shadow var(--transition-normal);
-        
+        transition: transform var(--transition-normal),
+          box-shadow var(--transition-normal);
+
         /* Ensure proper stacking context */
         position: relative;
         z-index: var(--z-sticky);
@@ -153,17 +167,17 @@
         height: auto;
         border-radius: var(--radius-sm);
         margin-bottom: var(--spacing-sm);
-        
+
         /* Ensure image doesn't overflow container */
         object-fit: cover;
-        
+
         /* Prevent image from being dragged */
         -webkit-user-drag: none;
         -khtml-user-drag: none;
         -moz-user-drag: none;
         -o-user-drag: none;
         user-drag: none;
-        
+
         /* Smooth loading */
         transition: opacity var(--transition-fast);
       }
@@ -182,7 +196,7 @@
         line-height: 1.3;
         color: var(--color-dark-blue);
         margin-bottom: var(--spacing-xs);
-        
+
         /* Ensure proper text rendering */
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -194,7 +208,7 @@
         font-weight: 400;
         line-height: 1.5;
         color: var(--color-gray);
-        
+
         /* Ensure proper text rendering */
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -207,15 +221,15 @@
           max-width: 280px;
           padding: var(--spacing-xs);
         }
-        
+
         .qr-card__content {
           padding: var(--spacing-xs);
         }
-        
+
         .qr-card__title {
           font-size: var(--font-size-base);
         }
-        
+
         .qr-card__description {
           font-size: 0.8125rem; /* 13px */
         }
@@ -226,15 +240,15 @@
           max-width: 350px;
           padding: var(--spacing-md);
         }
-        
+
         .qr-card__content {
           padding: var(--spacing-md);
         }
-        
+
         .qr-card__title {
           font-size: 1.25rem; /* 20px */
         }
-        
+
         .qr-card__description {
           font-size: var(--font-size-base);
         }
@@ -245,15 +259,15 @@
     <!-- Main content landmark -->
     <main class="qr-card" role="main" tabindex="0">
       <!-- QR Code Image with proper alt text and loading optimization -->
-      <img 
-        src="./images/image-qr-code.png" 
+      <img
+        src="./images/image-qr-code.png"
         alt="QR code linking to Frontend Mentor website for improving frontend development skills"
         class="qr-card__image"
         decoding="async"
         width="288"
         height="288"
       />
-      
+
       <!-- Content section with semantic structure -->
       <div class="qr-card__content">
         <h1 class="qr-card__title">
@@ -263,8 +277,19 @@
           Scan the QR code to visit Frontend Mentor and take your coding skills
           to the next level.
         </p>
+
+        <p>
+          I'm a passionate <b>Full Stack Developer</b> from the Dominican Republic
+          <span>🇩🇴</span> who loves creating amazing web experiences and solving
+          complex problems through code. All coding projects are built from the
+          ground up, from planning and designing all the way to solving
+          real-life problems with code. I'm currently building **JAVVEE Tech**,
+          starting as a solo venture with the ambitious vision of becoming the
+          most important software company in the Dominican Republic. Today it's
+          just me, but tomorrow we'll be leading the tech revolution in the
+          Caribbean.
+        </p>
       </div>
     </main>
-
-       </body>
- </html>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+/* Font Face Declarations */
+@font-face {
+  font-family: 'Figtree';
+  src: url('../assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 300 900; /* Variable font weight range */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('../assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 300 900; /* Variable font weight range */
+  font-style: italic;
+}
+
+/* Fallback static fonts if needed */
+@font-face {
+  font-family: 'Figtree';
+  src: url('../assets/fonts/Figtree-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('../assets/fonts/Figtree-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* CSS Custom Properties based on style guide */
+:root {
+  /* Typography */
+  --font-family-primary: 'Figtree', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-size-body: 16px;
+  
+  /* Font weights from style guide */
+  --font-weight-medium: 500;
+  --font-weight-extrabold: 800;
+  
+  /* Colors from style guide */
+  --color-yellow: hsl(47, 88%, 63%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-gray-500: hsl(0, 0%, 42%);
+  --color-gray-950: hsl(0, 0%, 7%);
+  
+  /* Layout breakpoints */
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+}
