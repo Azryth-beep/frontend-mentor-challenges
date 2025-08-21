@@ -24,8 +24,9 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://frontendmentor-newbie-qrcode.netlify.app/](https://frontendmentor-newbie-qrcode.netlify.app/)
+
+**Note**: This project is hosted on Netlify for live preview.
 
 ## My process
 
@@ -86,9 +87,7 @@ Moving forward, I want to focus on:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- GitHub - [@yourusername](https://github.com/yourusername)
-
----
-
-**Note**: Remember to replace the placeholder URLs and usernames with your actual information before submitting!
+- **Emmanuel CB** - Frontend Developer
+- LinkedIn - [emmanuelcb](https://www.linkedin.com/in/emmanuelcb/)
+- Freelance Profile - [@javvee_developerrd](https://www.instagram.com/javvee_developerrd/)
+- Personal Profile - [@_chris27](https://www.instagram.com/_chris27/)
