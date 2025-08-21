@@ -54,7 +54,8 @@
   color: var(--color-gray-950);
 }
 
-.info-title:hover{
+.info-title:hover,
+.info-title:active{
     color: var(--color-yellow);
 }
 
