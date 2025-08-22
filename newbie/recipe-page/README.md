@@ -9,6 +9,7 @@ This is my solution to the [Recipe Page challenge](https://www.frontendmentor.io
 ## The Challenge
 
 Build out a recipe page and get it looking as close to the design as possible. The design includes:
+
 - A hero image of the omelette
 - Recipe title and description
 - Preparation time breakdown
@@ -37,10 +38,12 @@ Build out a recipe page and get it looking as close to the design as possible. T
 ## Design Specifications
 
 ### Layout
+
 - Mobile: 375px
 - Desktop: 1440px
 
 ### Colors
+
 - White: hsl(0, 0%, 100%)
 - Stone 100: hsl(30, 54%, 90%) - Background color
 - Stone 150: hsl(30, 18%, 87%) - Border and separator colors
@@ -51,13 +54,14 @@ Build out a recipe page and get it looking as close to the design as possible. T
 - Rose 50: hsl(330, 100%, 98%) - Preparation time background
 
 ### Typography
+
 - **Young Serif**: 400 weight for main headings (h1, h2)
 - **Outfit**: 400, 600, 700 weights for body text and other headings
 - Base font size: 16px
 
 ## Project Structure
 
-```
+```bash
 recipe-page/
 ├── assets/
 │   ├── fonts/
@@ -83,11 +87,12 @@ recipe-page/
 ## Current Implementation Status
 
 ### ✅ Completed
+
 - **HTML Structure**: Semantic HTML with proper sections and accessibility
 - **CSS Architecture**: Three-tier CSS structure with variables, global styles, and components
 - **Typography**: Font imports and proper font family assignments
 - **Layout**: Responsive container with proper spacing
-- **Visual Elements**: 
+- **Visual Elements**:
   - Hero image with border radius
   - Preparation time section with rose background
   - Ingredients list with custom bullet points
@@ -96,6 +101,7 @@ recipe-page/
   - Horizontal separators between sections
 
 ### 🎨 Design Features
+
 - **Background**: Light stone background (hsl(30, 54%, 90%))
 - **Container**: White background with rounded corners on desktop
 - **Preparation Time**: Rose-tinted background with custom bullet points
@@ -105,6 +111,7 @@ recipe-page/
 - **Nutrition Table**: Clean table design with proper borders
 
 ### 📱 Responsive Design
+
 - Mobile-first approach
 - Breakpoints at 375px and 1440px
 - Adaptive spacing and typography
@@ -127,11 +134,21 @@ recipe-page/
 - **Layout Consistency**: Maintaining visual hierarchy across different screen sizes
 - **CSS Pseudo-elements**: Using ::before for custom bullet points and numbering
 - **Visual Separators**: Adding horizontal rules for better content organization
-
+- **CSS Counters**: Learned about CSS counter-reset and counter-increment for creating custom numbered lists in the instructions section
 
 ## Results
 
 Check the `results/` folder for screenshots of the completed challenge at different screen sizes.
 
+### Preview Images
+
+![Recipe Page Preview](./results/recipe-page-preview.png)
+![Recipe Page Preview 2](./results/recipe-page-preview-2.png)
+
+## Frontend Mentor Profile
+
+[My Frontend Mentor profile](https://www.frontendmentor.io/profile/ecruz-js)
+
+---
+
 **Challenge by [Frontend Mentor](https://www.frontendmentor.io?ref=challenge)**
-**Coded by [Your Name]**
