@@ -1,7 +1,5 @@
 # Frontend Mentor - Recipe Page Challenge
 
-![Design preview for the Recipe page coding challenge](./preview.jpg)
-
 ## Overview
 
 This is my solution to the [Recipe Page challenge](https://www.frontendmentor.io/challenges/recipe-page-QOogmKdls) from Frontend Mentor. The challenge involves building a responsive recipe page for a simple omelette recipe that looks as close to the provided design as possible.
@@ -143,7 +141,7 @@ Check the `results/` folder for screenshots of the completed challenge at differ
 ### Preview Images
 
 ![Recipe Page Preview](./results/recipe-page-preview.png)
-![Recipe Page Preview 2](./results/recipe-page-preview-2.png)
+![Recipe Page Preview 2](./results/recipe-page-preview-2nd.png)
 
 ## Frontend Mentor Profile
 
