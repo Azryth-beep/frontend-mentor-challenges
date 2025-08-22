@@ -140,8 +140,9 @@ Check the `results/` folder for screenshots of the completed challenge at differ
 
 ### Preview Images
 
-![Recipe Page Preview](./results/recipe-page-preview.png)
-![Recipe Page Preview 2](./results/recipe-page-preview-2nd.png)
+| Imagen 1                                                  | Imagen 2                                                        |
+| --------------------------------------------------------- | --------------------------------------------------------------- |
+| ![Recipe Page Preview](./results/recipe-page-preview.png) | ![Recipe Page Preview 2](./results/recipe-page-preview-2nd.png) |
 
 ## Frontend Mentor Profile
 
