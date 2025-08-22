@@ -4,7 +4,7 @@
 .recipe-container {
   max-width: 736px;
   margin: 0 auto;
-  padding: var(--spacing-md);
+  padding: 1rem;
   background-color: var(--color-white);
 }
 
@@ -25,11 +25,6 @@
   border-radius: var(--border-radius);
 }
 
-/* Recipe Header */
-.recipe-header {
-  margin-bottom: var(--spacing-lg);
-}
-
 .recipe-title {
   margin-bottom: var(--spacing-sm);
   color: var(--color-stone-900);
@@ -43,7 +38,7 @@
 /* Preparation Time */
 .prep-time {
   background-color: var(--color-rose-50);
-  padding: var(--spacing-lg);
+  padding: 1rem;
   border-radius: var(--border-radius);
   margin-bottom: var(--spacing-lg);
   font-family: var();
@@ -55,12 +50,7 @@
 
 .prep-time ul {
   list-style: none;
-  padding-left: 1rem;
-}
-
-.prep-time li {
-  padding: var(--spacing-xs) 0;
-  border-bottom: 1px solid var(--color-stone-150);
+  padding-left: 0;
 }
 
 .prep-time li::before {
@@ -141,14 +131,13 @@
 }
 
 .instructions li::before {
-  content: counter(instruction-counter);
+  content: counter(instruction-counter) ".";
   position: absolute;
   left: 0;
   top: 0;
   width: 2rem;
   height: 2rem;
-  background-color: var(--color-brown-800);
-  color: var(--color-white);
+  color: var(--color-brown-800);
   border-radius: 50%;
   display: flex;
   align-items: center;
